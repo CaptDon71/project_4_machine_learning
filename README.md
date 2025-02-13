@@ -75,6 +75,10 @@ The third chart from this method uses a zscore method to determine outliers when
 <br>
 The fourth chart shows the relationship with CO2 emissions and population growth over time. <br>
 <img width="1184" alt="Screenshot 2025-02-13 at 14 42 34" src="https://github.com/user-attachments/assets/ed0f8d43-841b-4691-b954-f58ec8ff25b7" /> <br>
+<br> <br>
+
+## Conclusions
+The dataset itself provides an in-depth insight into various environmental and social factors that have long been believed to impact climate change and the increasing warming trend across the globe. Using data like this and predictive modeling is vital to properly understand how these factors truly influence each other and what we can do reverse negative effects. The models built in this project use methods like neural networking and KMeans to make meaningful predictions, but they overall seem to come short of being accurate enough to be useful. This could be resolved by further aggregating the data or by using data where the countries can be aggregated by regions or the records could be aggregated by season and not just year. Another more complex model may also resolve some of the model reliability. 
 
 
 
