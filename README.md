@@ -66,10 +66,17 @@ The next chart which shows standardized trends from 1900 to 2020. The relationsh
   - The correlation appears strongest in recent decades
   - All three variables show higher standardized values compared to the historical average
   - There's increased volatility in extreme weather events while CO2 and fossil fuel trends remain more steadily elevated
-<br>
+
 It's important to note that this chart shows standardized values, meaning the data has been adjusted to show relative changes rather than absolute values. This helps in comparing trends across different types of measurements but doesn't show the raw magnitude of changes.
 The overall pattern suggests that as fossil fuel usage and CO2 emissions have increased, there has been a corresponding increase in extreme weather events, particularly in the latter half of the 20th century and early 21st century. However, correlation doesn't necessarily imply causation, and other factors not shown in this chart may also influence these relationships. <br>
+<br><br>
+The third chart from this method uses a zscore method to determine outliers when comparing CO2 emissions and extreme weather events over time. <br>
+<img width="1486" alt="Screenshot 2025-02-13 at 14 41 45" src="https://github.com/user-attachments/assets/17642099-d98a-4f5a-9c21-bca372224314" /> <br>
 <br>
+The fourth chart shows the relationship with CO2 emissions and population growth over time. <br>
+<img width="1184" alt="Screenshot 2025-02-13 at 14 42 34" src="https://github.com/user-attachments/assets/ed0f8d43-841b-4691-b954-f58ec8ff25b7" /> <br>
+
+
 
 
 
