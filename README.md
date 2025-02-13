@@ -22,7 +22,7 @@ You must manually add your username and password to this file and save it. The g
 The notebook is broken into three distict predictive models which show the various steps taken to make a more optimal model for the data. The data is properly standardized, scaled, and cleaned from things like duplicate columns in every model iteration to ensure maximum possible accuracy. Each model is saved in the "h5_files" directory within the repository. The methodology for each model is as follows:<br>
 <br>
 ### Model Iteration 1
-The first model utilizes the entire dataset created by the "SELECT *" statement in the initialization notebook. It analyzes the label "average temperature" against all other features in the data. The model is built, complied, and fit as shown in this image:<br>
+The first model utilizes the entire dataset created by the "SELECT *" statement in the initialization notebook. It analyzes the label "average temperature" against all other features in the data. The model is built, complied, and fit using a neural network model as shown in this image:<br>
 <br>
 <img width="812" alt="Screenshot 2025-02-13 at 16 15 05" src="https://github.com/user-attachments/assets/82b0c323-e79a-4814-be78-ebe7253c095b" /> <br>
 <br>
@@ -37,9 +37,9 @@ The model has an r2 score of -0.10753530069296424 and an accuracy of 0.895629465
 There are so many data points at every point in the graphs that they are ineligible. The next model attempts to fix this by aggregating the rows in the fill dataset by country and year. <br>
 
 ### Model Iteration 2
-The second model utilizes the second dataset created from the initialization file, which is an average of every field by country and year. This significantly reduced the ammount of fields and should address some of the variation problems in the first dataset. The model is built, complied, and fit with the same method as the first so we can see if this alone resolved the issues with the first. 
+The second model utilizes the second dataset created from the initialization file, which is an average of every field by country and year. This significantly reduced the ammount of fields and should address some of the variation problems in the first dataset. The model is built, complied, and fit with the same neural network method as the first so we can see if this alone resolved the issues with the first. 
 <br> <br>
-Once completed, this model had an r2 score of -0.2992058611821107 and an accuracy of 0.858296275138855 which is much better than the first model but still isn't a very reliable model overall. Still, it shows much better data as shown in the graphs below:
+Once completed, this model had an r2 score of -0.2992058611821107 and an accuracy of 0.858296275138855 which is much better than the first model but still isn't a very reliable model overall. Still, using the aggregated dataset shows much better data as shown in the graphs below:
 - What is the relationship between CO2 emissions and renewable energy usage overtime?
 <img width="782" alt="Screenshot 2025-02-13 at 14 39 34" src="https://github.com/user-attachments/assets/6195261a-3a1e-402f-a35e-78255925d396" /> <br>
 - What factors in the model are most useful in predicting sea level rise?
@@ -50,6 +50,26 @@ Once completed, this model had an r2 score of -0.2992058611821107 and an accurac
 The general trend between CO2 emissions and renewable energy adoption shows that as renewable energy adoption increased, carbon dioxide emissions decreased. Inversely, as renewable energy adoption decreased, there was generally a rise in carbon dioxide emissions. The data indicates that the most important factor in predicting sea-level rise is CO2 emissions. Through clustering techniques countries with similar environmental policies can be grouped together.
 
 ### Model Iteration 3
+The third and final iteration of the model uses a different approach than the previous model in an attempt to improve model predictability. It cleans, scales, and standardizes the data as the previous iterations do but it uses a KMeans method to cluster the data into four clusters by year and average temperature as shown below: <br>
+<img width="577" alt="Screenshot 2025-02-13 at 14 40 59" src="https://github.com/user-attachments/assets/2341b59b-564c-4c7d-9238-e038bb48fe8e" /> <br>
+<br>
+The next chart which shows standardized trends from 1900 to 2020. The relationships are shown between extreme weather events (red dotted line), CO2 emissions (blue dotted line), and fossil fuel usage (green dotted line): <br>
+<img width="728" alt="Screenshot 2025-02-13 at 14 41 23" src="https://github.com/user-attachments/assets/60b7545e-459c-4af0-91f6-ebe6a61c3729" /> <br>
+#### Key observations for this chart
+- Increasing Correlation Post-1960:
+  - There appears to be a stronger positive correlation between all three variables starting around 1960
+  - The frequency and intensity of extreme weather events begin to track more closely with both CO2 emissions and fossil fuel usage
+- Long-term Trends:
+  - Both CO2 emissions and fossil fuel usage show a generally upward trend over the entire period
+  - Extreme weather events show more variability early in the century but begin to follow a more consistent upward pattern in the latter half
+- Recent Patterns (2000-2020):
+  - The correlation appears strongest in recent decades
+  - All three variables show higher standardized values compared to the historical average
+  - There's increased volatility in extreme weather events while CO2 and fossil fuel trends remain more steadily elevated
+<br>
+It's important to note that this chart shows standardized values, meaning the data has been adjusted to show relative changes rather than absolute values. This helps in comparing trends across different types of measurements but doesn't show the raw magnitude of changes.
+The overall pattern suggests that as fossil fuel usage and CO2 emissions have increased, there has been a corresponding increase in extreme weather events, particularly in the latter half of the 20th century and early 21st century. However, correlation doesn't necessarily imply causation, and other factors not shown in this chart may also influence these relationships. <br>
+<br>
 
 
 
