@@ -1,5 +1,6 @@
 ### project_4_machine_learning
 # Machine Learning Models with Climate Change Data
+<br>
 
 ## Project Overview
 This project uses a dataset that records various climate change indicators for various countries since the beginning of the 20th century to develop a machine learning model that can be used to assess what indicators are best used to predict warming patterns. It assesses several factors within individual countries in a given year that record the state of the environment, such as temperature anomaly, forest area, sea level rise, artic ice extent, extreme weather events, average rainfall, air pollution, biodiversity, ocean acidification, and average temperature. It also uses several features related to human behavior, such as CO2 emissions, population, gdp, renewable energy usage, methane emissions, urbanization, deforestation rate, solar energy potential, waste management, per capita emissions, industrial activity, fossil fuel usage, energy consumption per capita, and an overall policy score. The models assess all these factors to attempt to make predictions for future warming trends.
